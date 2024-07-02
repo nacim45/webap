@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tennis Court Review Game</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="slides.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="c5">
+<div class="c">
+  <div class="navbar">
+    <ul class="navigation">
+        <li> <a href="index.html">Home</a></li>
+        <li> <a href="forehand_backhand.html">Forehand and Backhand</a></li>
+        <li> <a href="volley.html">Volley</a></li>
+        <li> <a href="service.html">Service</a></li>
+        <li> <a href="equipment.html">Equipment</a></li>
+        <li> <a href="game.html">Game</a></li>
+        <span class="toggleMenu"></span>
+    </ul>
+</div>
+<p id="para2" class="header1"><b>Welcome to this quick review game about tennis where you can find out more about the court</b></p>
+    
+<div class="court-container">
+    <img src="images/tennis_court_diagram.png" id="image_cont2" usemap="#court-map">
+
+    <button class="button" id="baseline-button">Baseline</button>
+    <button class="button" id="out-hall-button">Out Hall</button>
+    <button class="button" id="net-button">Net</button>
+    <button class="button" id="service-line-button">Service Line</button>
+</div>
+<div id="baseline-info" class="info-container">The baseline in tennis serves as the fundamental boundary of the court, marking the rear limit of the playing area. It extends parallel to the net, connecting the service lines on both sides. Players start their serves behind the baseline, within the designated service boxes. Throughout a match, the baseline is strategically utilized by players, who may position themselves behind it to defend against powerful shots or move forward to capitalize on shorter balls. Additionally, groundstroke shots, which are essential in tennis, are often executed from or near the baseline. Overall, the baseline plays a pivotal role in defining the court's dimensions and is integral to the tactics employed by players during gameplay.</div>
+<div id="out-hall-info" class="info-container">
+    In tennis, the out hall, also known as the "out-of-bounds" area, encompasses the regions outside the designated playing lines of the court. Serving as the boundaries beyond which shots are considered out, this area plays a pivotal role in determining the legality of shots during matches. Players strategically aim to keep their shots within the confines of the playing area, avoiding the out hall to score points and maintain control of rallies. Conversely, shots landing in the out hall result in points awarded to the opposing player, emphasizing the importance of accuracy and placement in tennis gameplay. Furthermore, players may exploit the out hall by strategically directing shots to force opponents out of position or capitalize on open spaces, thereby gaining a competitive advantage. Understanding and effectively utilizing the out hall is essential for players seeking to optimize their shot selection and tactical approach, as it significantly influences the outcome of points and matches.</div>
+<div id="net-info" class="info-container">The net in tennis stands as a central element that divides the court into two equal halves, serving as both a barrier and a tactical asset for players. Beyond merely demarcating the playing area, the net plays a crucial role in various aspects of gameplay, particularly in facilitating strategic shots like the volley and smash. Players often employ the volley, a quick shot executed near the net, to seize control of the point and apply pressure on opponents. Meanwhile, the smash, an aggressive overhead shot executed close to the net, is a potent offensive weapon utilized to deliver decisive winners. Mastering these techniques requires precision and timing, as players seek to exploit opportunities created by their opponents' positioning and shot selections. Moreover, adept net play demands quick reflexes and adaptability, as players must swiftly transition between defensive and offensive postures to maintain control of the rally. Ultimately, the net stands as both a physical obstacle and a strategic focal point, shaping the dynamic flow of exchanges and highlighting the multifaceted nature of tennis gameplay.</div>
+<div id="service-line-info" class="info-container">The service line in tennis marks the boundary between the service box and the rest of the court, playing a critical role in serving and receiving during matches. Positioned parallel to the net, halfway between the baseline and the net. Furthermore, the service line influences players' tactical decisions, as servers may strategically target specific areas of the service box to exploit opponents' weaknesses or gain a competitive edge. Overall, the service line serves as a fundamental component of tennis gameplay, shaping the dynamics of serves and returns while contributing to the strategic depth of the sport.</div>
+
+<div id="info"></div>
+
+<div class="quiz-container">
+  <h2>Tennis Quiz</h2>
+  <div class="question">
+    <p>1. What is the scoring system in tennis called?</p>
+    <div class="options">
+      <button class="option" data-correct="false"></button><span class="proposition" id="pa">Points</span>
+      <button class="option" data-correct="true"></button><span class="proposition" id="pa">Sets</span>
+      <button class="option" data-correct="false"></button><span class="proposition" id="pa">Games</span>
+    </div>
+  </div>
+  <div class="question">
+    <p>2. How many points does a player need to win a game?</p>
+    <div class="options">
+      <button class="option" data-correct="false"></button><span class="proposition" id="pa">5</span>
+      <button class="option" data-correct="false"></button><span class="proposition" id="pa">6</span>
+      <button class="option" data-correct="true"></button><span class="proposition" id="pa">4</span>
+    </div>
+  </div>
+  <div class="question">
+    <p>3. What is the term for a shot hit before the ball bounces on the court?</p>
+    <div class="options">
+      <button class="option" data-correct="false"></button><span class="proposition" id="pa">Forehand</span>
+      <button class="option" data-correct="false"></button><span class="proposition" id="pa">Backhand</span>
+      <button class="option" data-correct="true"></button><span class="proposition" id="pa">Volley</span>
+    </div>
+  </div>
+  <button id="submit">Submit</button>
+  <button id="restart">Restart</button>
+</div>
+</div>
+
+  
+
+  <footer id="hd2">
+    <a href="https://www.instagram.com/tennistv/?hl=en" id="IL"><img src="images/instagram-line.png" alt="Instagram Logo">Instagram</a>
+    <a href="https://www.facebook.com/TennisTV/" id="IL2"><img src="images/facebook-circle-line.png" alt="Facebook Logo">Facebook</a>
+    <p id="foot1"> &copy; 2024 TSL - Tennis Skills Learning</p>
+    <p class="para">For more information, contact us at <a href="mailto:TSL_tennis@hotmail.com" id="email">TSL_tennis@hotmail.com</a></p>
+
+  </footer>
+</div>
+<script src="java.js"></script>
+</body>
+</html>
